@@ -4,17 +4,18 @@ Android SDK home for ConveltKit.
 
 ## Status
 
-This repository is scaffold-only in this slice.
+This repository owns the source for the Android ConveltKit SDK.
 
-- No Google Play BillingClient integration yet.
-- No purchase-token upload flow yet.
-- No production-ready Android billing behavior yet.
+- Google Play BillingClient product lookup, purchase launch, and purchase observer wiring are implemented.
+- Google purchase-token uploads target Convelt `POST /v1/client/google/purchases`.
+- Bootstrap and client requests serialize to the Convelt `1.0.0` API contract.
+- Publication is local/release-train driven until a signed Maven distribution workflow is added.
 
 ## Naming and version contract
 
 - Public SDK type: `ConveltKit`
 - Android namespace/package: `ai.aureuma.conveltkit`
-- Future Maven coordinate: `ai.aureuma.conveltkit:conveltkit-android:<convelt-version>`
+- Maven coordinate: `ai.aureuma.conveltkit:conveltkit-android:<convelt-version>`
 - Canonical version source: `convelt/Cargo.toml` `[workspace.package].version`
 
 Version metadata is generated from Convelt:
@@ -22,7 +23,7 @@ Version metadata is generated from Convelt:
 - `gradle.properties` (`conveltKitVersion=...`)
 - `src/main/kotlin/ai/aureuma/conveltkit/ConveltKitVersion.kt`
 
-## Future dependency and import shape
+## Dependency and import shape
 
 ```kotlin
 dependencies {
