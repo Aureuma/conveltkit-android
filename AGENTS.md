@@ -1,7 +1,5 @@
 # Repo Rules
 
-- Follow the shared workspace rules in `/home/shawn/Development/AGENTS.md`.
-
 ## ConveltKit Shared Version Train
 
 - `convelt/Cargo.toml` `[workspace.package].version` is the canonical hard-coded version for `convelt`, `conveltkit-ios`, and `conveltkit-android`.
