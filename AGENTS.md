@@ -1,4 +1,5 @@
 # Repo Rules
+This repository follows the global instructions in `/home/shawn/Development/AGENTS.md`; local entries below only add repository-specific overrides.
 ## ConveltKit Shared Version Train
 - `convelt/Cargo.toml` `[workspace.package].version` is the canonical hard-coded version for `convelt`, `conveltkit-ios`, and `conveltkit-android`.
 - Any tracked-content commit in one of these three repos must advance the next shared patch version across all three repos in the same release train.
