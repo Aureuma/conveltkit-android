@@ -4,5 +4,5 @@
 package ai.aureuma.conveltkit
 
 object ConveltKitVersion {
-    const val value: String = "0.3.9"
+    const val value: String = "0.3.13"
 }
