@@ -30,4 +30,4 @@ jobs:
           gradle-version: "8.7"
 
       - name: Build
-        run: gradle --no-daemon build
+        run: gradle --no-daemon --max-workers=2 --no-parallel build
